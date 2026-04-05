@@ -1,0 +1,26 @@
+
+<%- include("partials/header.ejs") %>
+<% 
+  // Determine a 'theme' based on temperature
+  let themeClass = 'cold';
+  if (data.main.temp > 70) { themeClass = 'hot'; }
+
+%>
+<body>
+    <%- include("partials/nav.ejs") %>
+    <div class="weatherdiv <%= themeClass %>"">
+        <h1>Monterey Bay</h1>
+
+        <h1>
+            <%=Math.round(data.main.temp)%> °F
+        </h1>
+        <img src="http://openweathermap.org/img/wn/<%= data.weather[0].icon %>@2x.png" alt="icon">
+        <p>Min: <%=Math.round(data.main.temp_min)%> Max: <%=Math.round(data.main.temp_max)%></p>
+        <p>Condition: <%=data.weather[0].description%></p>
+    </div>
+    <%- include("partials/footer.ejs") %>
+</body>
+
+
+
+</html>

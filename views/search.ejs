@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+    <body>
+        <%- include("partials/nav.ejs") %>
+            <div id="search-container">
+                <h1>Search</h1>
+                <form action="/searchLocation" method="GET">
+                    Location: <input id="locationInput" type="text" name="Location">
+                </form>
+                <%- include("partials/footer.ejs") %>
+            </div>
+
+    </body>
+
+    </html>

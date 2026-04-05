@@ -1,0 +1,54 @@
+body{
+    text-align: center;
+}
+
+.weatherdiv{
+    color: white;  
+    font-family: 'Montserrat';
+}
+
+
+.weather-card {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.hot { background: linear-gradient(to bottom, #ff512f, #dd2476); }
+.cold { background: linear-gradient(to bottom, #2193b0, #6dd5ed); }
+
+.temp {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.search-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 100px auto; 
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 25px; 
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0,123,255,0.2);
+}
