@@ -15,6 +15,7 @@
             <%=Math.round(data.main.temp)%> °F
         </h1>
         <img src="http://openweathermap.org/img/wn/<%= data.weather[0].icon %>@2x.png" alt="icon">
+        <p><%=readableTime%></p>
         <p>Min: <%=Math.round(data.main.temp_min)%> Max: <%=Math.round(data.main.temp_max)%></p>
         <p>Condition: <%=data.weather[0].description%></p>
     </div>
