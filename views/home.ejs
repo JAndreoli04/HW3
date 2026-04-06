@@ -1,9 +1,18 @@
 <%- include("partials/header.ejs") %>
-<body>
-    <%- include("partials/nav.ejs") %>
-    <h1>Weather App</h1>
+
+    <body>
+        <%- include("partials/nav.ejs") %>
+            <h1>Weather App</h1>
+            <div id="buttons">
+                <a href="/search" class="btn">Find Your City</a>
+                <a href="/current" class="btn">View Local Weather</a>
+                <h3>Accurate Data</h3>
+                <p>Powered by OpenWeatherMap's Geocoding technology.</p>
+            </div>
+            
 
 
-    <%- include("partials/footer.ejs") %>
-</body>
-</html>
+            <%- include("partials/footer.ejs") %>
+    </body>
+
+    </html>

@@ -1,10 +1,25 @@
 body{
     text-align: center;
+    margin-bottom: 40px;
 }
+.buttons{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 
 .weatherdiv{
     color: white;  
     font-family: 'Montserrat';
+}
+
+.btn {
+    padding: 12px 28px;
+    border-radius: 30px; /* Pill shape */
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
 
